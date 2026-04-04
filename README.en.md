@@ -189,6 +189,9 @@ Essential metrics for agent testing:
 - [Low-Resource Languages Jailbreak GPT-4](https://arxiv.org/abs/2310.02446) - Demonstrates safety training generalization failure in low-resource languages
 - [A Cross-Language Investigation into Jailbreak Attacks in Large Language Models](https://arxiv.org/abs/2401.16765) - Multilingual jailbreak dataset construction and defense reducing attack success by 96.2%
 - [Not what you've signed up for: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection](https://arxiv.org/abs/2302.12173) - Systematic analysis of indirect prompt injection attacks (Greshake et al., 2023)
+- [Jailbroken: How Does LLM Safety Training Fail?](https://arxiv.org/abs/2307.02483) - Classifies jailbreak success factors into "competing objectives" and "generalization failure" (Wei et al., 2023)
+- [Great, Now Write an Article About That: The Crescendo Multi-Turn LLM Jailbreak Attack](https://arxiv.org/abs/2404.01833) - **Crescendo Attack**. Multi-turn jailbreak that gradually escalates from innocuous conversation (Microsoft Research)
+- [AutoDAN: Generating Stealthy Jailbreak Prompts on Aligned Large Language Models](https://arxiv.org/abs/2310.04451) - Genetic algorithm-based generation of natural, low-perplexity jailbreak prompts
 
 ### Defense Research
 
@@ -201,6 +204,7 @@ Essential metrics for agent testing:
 
 - [JSAI National Conference Proceedings (J-Stage)](https://www.jstage.jst.go.jp/browse/pjsai/-char/ja) - Paper archive from JSAI national conferences. Searchable for AI Safety-related presentations
 - [AI Safety Red Teaming Method Guide v1.10](https://aisi.go.jp/assets/pdf/E1_ai_safety_RT_v1.10_en.pdf) - Systematic red teaming methodology guide by AISI (March 2025)
+- [JBB-S: Japanese Benchmark for LLM Safety](https://arxiv.org/abs/2403.19964) - Safety evaluation benchmark for Japanese LLMs covering Japan-specific harmful output categories
 
 ---
 
@@ -236,6 +240,7 @@ Resources primarily in Japanese for the AI Safety community in Japan.
 - [Machine Learning Tokyo (MLT)](https://www.meetup.com/machine-learning-tokyo/) - Tokyo-based ML community with AI Safety activities including Constitutional AI study groups ([Discord](https://discord.gg/CT7nBdYCsY))
 - [AI Meetup Tokyo](https://ai-meetup-tokyo.connpass.com/) - AI development information exchange community (connpass)
 - [ChatGPT Community JP](https://chatgpt.connpass.com/) - Regular meetups on ChatGPT and generative AI (connpass)
+- [OWASP Japan Chapter](https://owasp.org/www-chapter-japan/) - OWASP Japan. Community activities covering LLM security and application security
 
 ---
 
