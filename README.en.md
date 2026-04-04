@@ -21,7 +21,7 @@ This list systematically organizes tools, regulations, attack techniques, defens
 | Developing or operating LLM apps | [Attack Techniques](#attack-techniques) → [Tools](#tools) → [Defense Methods](#defense-methods) |
 | Responsible for compliance / risk | [Regulations & Frameworks](#regulations--frameworks) → [Tools](#tools) |
 | Learning about AI Safety | [Learning Resources](#learning-resources) → [Attack Techniques](#attack-techniques) |
-| Researching as an AI agent | [MCP / Agent Security](#mcp--agent-security) → [Papers](#papers) |
+| Researching as an AI agent | [For AI Agents](#for-ai-agents) → [MCP / Agent Security](#mcp--agent-security) → [Papers](#papers) |
 | Already practicing AI Red Teaming | [Contents](#contents) and jump to any section |
 
 ## Contents
