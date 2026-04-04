@@ -10,7 +10,7 @@ This list covers tools, regulations, attack techniques, defense methods, papers,
 
 - [Tools](#tools)
   - [Open Source Tools](#open-source-tools)
-  - [Tools from Japan](#tools-from-japan)
+  - [Tools & Datasets from Japan](#tools--datasets-from-japan)
   - [Other Tools](#other-tools)
   - [Commercial Tools & Services](#commercial-tools--services)
 - [Regulations & Frameworks](#regulations--frameworks)
@@ -56,9 +56,11 @@ Major open source tools for AI Red Teaming. Star counts as of March 2026.
 
 - [confident-ai/deepteam](https://github.com/confident-ai/deepteam) - Red teaming framework by the DeepEval team. Dynamically auto-generates test cases from vulnerability definitions, eliminating the need for pre-prepared datasets
 
-### Tools from Japan
+### Tools & Datasets from Japan
 
 - [Japan-AISI/aisev](https://github.com/Japan-AISI/aisev) - AI safety evaluation environment developed by Japan's AI Safety Institute (AISI). Features quantitative/qualitative evaluation across 10 assessment dimensions and automated red teaming. Requires Docker. Supports both Japanese and English (prototype stage as of September 2025)
+- [llm-jp/AnswerCarefully](https://huggingface.co/datasets/llm-jp/AnswerCarefully) - Japanese LLM safety dataset by NII's LLM-jp project. 1,800 Q&A pairs reflecting Japan's socio-cultural context. Useful for safety fine-tuning and as an evaluation benchmark — 📄 [Paper](https://arxiv.org/abs/2506.02372)
+- [llm-jp/awesome-japanese-llm](https://github.com/llm-jp/awesome-japanese-llm) - Comprehensive overview of Japanese LLMs. Useful for understanding the landscape of models before conducting safety evaluation
 
 ### Other Tools
 
@@ -105,18 +107,18 @@ Major open source tools for AI Red Teaming. Star counts as of March 2026.
 ### Prompt Injection
 
 - **Direct Injection**: Directly overwriting system prompts
-- **Indirect Injection**: Embedding attack prompts in external data sources (web pages, documents) and injecting them into models via RAG systems
+- **Indirect Injection**: Embedding attack prompts in external data sources (web pages, documents) and injecting them into models via RAG systems — 📄 [Greshake et al., 2023](https://arxiv.org/abs/2302.12173)
 
 ### Jailbreaking
 
 - **DAN (Do Anything Now)**: Making models adopt unrestricted personas
 - **Character Roleplay**: Bypassing safety guardrails by having models play specific characters
 - **Encoding Attacks**: Encoding prompts in Base64, ROT13, etc. to bypass filters
-- **Multi-step Attacks (Crescendo)**: Dialogue-based attacks that gradually relax constraints
+- **Multi-step Attacks (Crescendo)**: Dialogue-based attacks that gradually relax constraints — 📄 [Microsoft Research](https://arxiv.org/abs/2404.01833)
 
 ### Multilingual Attacks
 
-- **Low-Resource Language Attacks**: Using non-English languages (including Japanese) to bypass safety guardrails trained primarily on English. Low-resource languages have approximately 3x higher likelihood of encountering harmful content
+- **Low-Resource Language Attacks**: Using non-English languages (including Japanese) to bypass safety guardrails trained primarily on English. Low-resource languages have approximately 3x higher likelihood of encountering harmful content — 📄 [Deng et al., 2024](https://arxiv.org/abs/2310.06474)
 - **Code-Switching Attacks**: Breaking through multilingual safety guardrails by mixing languages (e.g., alternating between English and Japanese)
 - **Japanese-Specific Attack Vectors**: Exploiting Japan's mixed writing system (kanji, hiragana, katakana, romaji)
 
@@ -131,9 +133,10 @@ Major open source tools for AI Red Teaming. Star counts as of March 2026.
 
 ### Guardrails
 
-- **Input Filtering**: Detection and blocking of malicious inputs through prompt preprocessing
-- **Output Filtering**: Detection and removal of harmful content through response postprocessing
+- **Input Filtering**: Detection and blocking of malicious inputs through prompt preprocessing — 📄 [Llama Guard](https://arxiv.org/abs/2312.06674)
+- **Output Filtering**: Detection and removal of harmful content through response postprocessing — 📄 [NeMo Guardrails](https://arxiv.org/abs/2310.10501)
 - **Multi-layer Defense**: Input guard -> Model -> Output guard layered defense architecture
+- **Constitutional AI**: Safety alignment through AI feedback — 📄 [Anthropic, 2022](https://arxiv.org/abs/2212.08073)
 
 ### Evaluation & Benchmarks
 
@@ -267,6 +270,12 @@ Resources primarily in Japanese for the AI Safety community in Japan.
 - [HarmBench](https://github.com/centerforaisafety/HarmBench) - Standardized benchmark for automated red teaming
 
 ---
+
+## Update Policy
+
+- Star counts and release info are updated quarterly
+- Broken links are checked monthly via [GitHub Actions](.github/workflows/link-check.yml)
+- New resource suggestions are welcome via [Issues](.github/ISSUE_TEMPLATE/suggest-resource.md) or PRs
 
 ## Contributing
 
