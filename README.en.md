@@ -36,7 +36,7 @@ Major open source tools for AI Red Teaming. Star counts as of April 2026.
 |------|------:|----------|---------|----------|
 | [Promptfoo](https://github.com/promptfoo/promptfoo) | ~19,300 | TypeScript | MIT | RAG, agent & MCP testing, compliance mapping |
 | [Garak](https://github.com/NVIDIA/garak) | ~7,500 | Python | Apache 2.0 | By NVIDIA, probe modules, academic approach |
-| [PyRIT](https://github.com/microsoft/PyRIT) | ~3,700 | Python | MIT | By Microsoft, multimodal support, 75 converters |
+| [PyRIT](https://github.com/microsoft/PyRIT) | ~3,700 | Python | MIT | By Microsoft, multimodal support, 80+ converters |
 | [DeepTeam](https://github.com/confident-ai/deepteam) | ~1,400 | Python | Apache 2.0 | Dynamic test case generation, OWASP/NIST mapping |
 
 #### Promptfoo
@@ -46,7 +46,7 @@ Major open source tools for AI Red Teaming. Star counts as of April 2026.
 
 #### Garak
 
-- [NVIDIA/garak](https://github.com/NVIDIA/garak) - LLM vulnerability scanner by NVIDIA's AI red team. Features the largest attack pattern library with 120+ probe modules. Specialized in single-turn model response testing
+- [NVIDIA/garak](https://github.com/NVIDIA/garak) - LLM vulnerability scanner by NVIDIA's AI red team. Features 30+ probe categories covering a wide range of attack patterns. Specialized in single-turn model response testing
 
 #### PyRIT
 
@@ -58,7 +58,7 @@ Major open source tools for AI Red Teaming. Star counts as of April 2026.
 
 ### Tools & Datasets from Japan
 
-- [Japan-AISI/aisev](https://github.com/Japan-AISI/aisev) - AI safety evaluation environment developed by Japan's AI Safety Institute (AISI). Features quantitative/qualitative evaluation across 10 assessment dimensions and automated red teaming. Requires Docker. Supports both Japanese and English (prototype stage as of September 2025)
+- [Japan-AISI/aisev](https://github.com/Japan-AISI/aisev) - AI safety evaluation environment developed by Japan's AI Safety Institute (AISI). Features quantitative/qualitative evaluation across 10 assessment dimensions and automated red teaming. Requires Docker. Supports both Japanese and English (released September 2025, last updated February 2026)
 - [llm-jp/AnswerCarefully](https://huggingface.co/datasets/llm-jp/AnswerCarefully) - Japanese LLM safety dataset by NII's LLM-jp project. 1,800 Q&A pairs reflecting Japan's socio-cultural context. Useful for safety fine-tuning and as an evaluation benchmark — 📄 [Paper](https://arxiv.org/abs/2506.02372)
 - [llm-jp/awesome-japanese-llm](https://github.com/llm-jp/awesome-japanese-llm) - Comprehensive overview of Japanese LLMs. Useful for understanding the landscape of models before conducting safety evaluation
 
