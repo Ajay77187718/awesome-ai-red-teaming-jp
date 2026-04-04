@@ -4,7 +4,13 @@
 
 > A curated list of AI Red Teaming / AI Safety resources with a focus on Japanese-language materials
 
-Applications built with LLMs are exposed to attacks such as prompt injection and jailbreaking. **AI Red Teaming** is the practice of evaluating system safety from an attacker's perspective. With the EU AI Act mandating red teaming documentation for high-risk AI systems from August 2026, the practical importance of this field is growing rapidly.
+Attacks on LLM-powered applications are already causing real-world damage:
+
+- **Chevrolet dealership chatbot** was tricked via prompt injection into offering to sell a $76,000 SUV for $1 (2023)
+- **Air Canada chatbot** fabricated a refund policy, and a court ordered the airline to pay damages (2024)
+- **ServiceNow AI assistant** had a vulnerability allowing low-privilege agents to escalate to high-privilege operations (2025)
+
+**AI Red Teaming** is the practice of evaluating system safety from an attacker's perspective. With the EU AI Act mandating red teaming documentation for high-risk AI systems from August 2026, the practical importance of this field is growing rapidly.
 
 This list systematically organizes tools, regulations, attack techniques, defense methods, papers, and learning resources related to AI Red Teaming, with a focus on Japanese-language materials.
 
