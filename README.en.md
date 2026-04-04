@@ -2,50 +2,50 @@
 
 [Japanese (日本語)](README.md) | **English**
 
-> A curated list of AI Red Teaming / AI Safety resources with a focus on Japanese-language materials
+> 🛡️ A curated list of AI Red Teaming / AI Safety resources with a focus on Japanese-language materials
 
 Attacks on LLM-powered applications are already causing real-world damage:
 
-- **Chevrolet dealership chatbot** was tricked via prompt injection into offering to sell a $76,000 SUV for $1 (2023)
-- **Air Canada chatbot** fabricated a refund policy, and a court ordered the airline to pay damages (2024)
-- **ServiceNow AI assistant** had a vulnerability allowing low-privilege agents to escalate to high-privilege operations (2025)
+- 🚗 **Chevrolet dealership chatbot** was tricked via prompt injection into offering to sell a $76,000 SUV for $1 (2023)
+- ✈️ **Air Canada chatbot** fabricated a refund policy, and a court ordered the airline to pay damages (2024)
+- 🔓 **ServiceNow AI assistant** had a vulnerability allowing low-privilege agents to escalate to high-privilege operations (2025)
 
 **AI Red Teaming** is the practice of evaluating system safety from an attacker's perspective. With the EU AI Act mandating red teaming documentation for high-risk AI systems from August 2026, the practical importance of this field is growing rapidly.
 
 This list systematically organizes tools, regulations, attack techniques, defense methods, papers, and learning resources related to AI Red Teaming, with a focus on Japanese-language materials.
 
-**Where to start:**
+**🧭 Where to start:**
 
 | Your Role (or AI's) | Recommended Starting Point |
 |--------------------|--------------------------|
-| Developing or operating LLM apps | [Attack Techniques](#attack-techniques) → [Tools](#tools) → [Defense Methods](#defense-methods) |
-| Responsible for compliance / risk | [Regulations & Frameworks](#regulations--frameworks) → [Tools](#tools) |
-| Learning about AI Safety | [Learning Resources](#learning-resources) → [Attack Techniques](#attack-techniques) |
-| Researching as an AI agent | [For AI Agents](#for-ai-agents) → [MCP / Agent Security](#mcp--agent-security) → [Papers](#papers) |
-| Already practicing AI Red Teaming | [Contents](#contents) and jump to any section |
+| 👨‍💻 Developing or operating LLM apps | [⚔️ Attack Techniques](#️-attack-techniques) → [🧰 Tools](#-tools) → [🛡️ Defense Methods](#️-defense-methods) |
+| 📋 Responsible for compliance / risk | [📜 Regulations & Frameworks](#-regulations--frameworks) → [🧰 Tools](#-tools) |
+| 🎓 Learning about AI Safety | [📚 Learning Resources](#-learning-resources) → [⚔️ Attack Techniques](#️-attack-techniques) |
+| 🤖 Researching as an AI agent | [🤖 For AI Agents](#-for-ai-agents) → [🔌 MCP / Agent Security](#-mcp--agent-security) → [📄 Papers](#-papers) |
+| 🔴 Already practicing AI Red Teaming | [📑 Contents](#-contents) and jump to any section |
 
-## Contents
+## 📑 Contents
 
-- [Tools](#tools)
+- [🧰 Tools](#-tools)
   - [Open Source Tools](#open-source-tools)
   - [Tools & Datasets from Japan](#tools--datasets-from-japan)
   - [Other Tools](#other-tools)
   - [Commercial Tools & Services](#commercial-tools--services)
-- [Regulations & Frameworks](#regulations--frameworks)
+- [📜 Regulations & Frameworks](#-regulations--frameworks)
   - [International Regulations](#international-regulations)
   - [Japan-Specific Regulations](#japan-specific-regulations)
   - [Industry Standards](#industry-standards)
-- [Attack Techniques](#attack-techniques)
-- [Defense Methods](#defense-methods)
-- [MCP / Agent Security](#mcp--agent-security)
-- [Papers](#papers)
-- [Japanese-Language Resources](#japanese-language-resources)
-- [Learning Resources](#learning-resources)
-- [For AI Agents](#for-ai-agents)
+- [⚔️ Attack Techniques](#️-attack-techniques)
+- [🛡️ Defense Methods](#️-defense-methods)
+- [🔌 MCP / Agent Security](#-mcp--agent-security)
+- [📄 Papers](#-papers)
+- [🇯🇵 Japanese-Language Resources](#-japanese-language-resources)
+- [📚 Learning Resources](#-learning-resources)
+- [🤖 For AI Agents](#-for-ai-agents)
 
 ---
 
-## Tools
+## 🧰 Tools
 
 Tools for conducting AI Red Teaming. If you're unsure where to start, try **Promptfoo** (config-based, easy setup) or **Garak** (CLI one-liner, instant execution).
 
@@ -97,7 +97,7 @@ Star counts as of April 2026 (GitHub API verified).
 
 ---
 
-## Regulations & Frameworks
+## 📜 Regulations & Frameworks
 
 Red teaming is no longer just a best practice — it's becoming a legal obligation. The EU AI Act (effective August 2026) mandates red teaming documentation for high-risk AI, and OWASP has published vendor evaluation criteria.
 
@@ -125,7 +125,7 @@ Red teaming is no longer just a best practice — it's becoming a legal obligati
 
 ---
 
-## Attack Techniques
+## ⚔️ Attack Techniques
 
 Major attack categories against LLM applications. Understanding what attacks your system faces is the first step toward defense.
 
@@ -162,7 +162,7 @@ Attacks directly leading to confidential information leakage. One of the top ris
 
 ---
 
-## Defense Methods
+## 🛡️ Defense Methods
 
 No silver bullet exists to block 100% of attacks. Effective defense is achieved by **combining multiple layers**.
 
@@ -182,7 +182,7 @@ Benchmarks for quantitatively measuring defense effectiveness.
 
 ---
 
-## MCP / Agent Security
+## 🔌 MCP / Agent Security
 
 MCP saw [30 CVEs reported in just 60 days, with 38% of scanned servers lacking authentication](https://medium.com/ai-security-hub/mcps-first-year-what-30-cves-and-500-server-scans-tell-us-about-ai-s-fastest-growing-attack-6d183fc9497f). As LLMs begin calling external tools, this is the fastest-growing attack surface.
 
@@ -210,7 +210,7 @@ Essential metrics for agent testing:
 
 ---
 
-## Papers
+## 📄 Papers
 
 The theoretical foundation of AI Red Teaming. Automated methods achieve ~1.5x the success rate of manual approaches (69.5% vs 47.6%), and research in this field directly impacts practice.
 
@@ -254,7 +254,7 @@ Foundational papers behind many of today's red teaming tools.
 
 ---
 
-## Japanese-Language Resources
+## 🇯🇵 Japanese-Language Resources
 
 AI Red Teaming information is heavily skewed toward English. Practical resources available in Japanese are limited. This section collects Japanese-language articles, books, and communities.
 
@@ -290,7 +290,7 @@ AI Red Teaming information is heavily skewed toward English. Practical resources
 
 ---
 
-## Learning Resources
+## 📚 Learning Resources
 
 Learning paths organized by skill level.
 
@@ -323,7 +323,7 @@ Foundational resources for entering AI Safety research. Paper lists, benchmarks,
 
 ---
 
-## For AI Agents
+## 🤖 For AI Agents
 
 This repository supports [llms.txt](llms.txt) for efficient access by AI agents and RAG pipelines.
 
@@ -356,17 +356,17 @@ claude mcp add ai-red-teaming-jp \
 | `get_regulations(region?)` | Get regulations by region |
 | `get_section(name)` | Get full section content by name |
 
-## Update Policy
+## 🔄 Update Policy
 
 - Star counts and release info are updated quarterly
 - Broken links are checked automatically via GitHub Actions ([link-check](.github/workflows/link-check.yml), [markdown-lint](.github/workflows/awesome-lint.yml))
 - New resource suggestions are welcome via [Issues](.github/ISSUE_TEMPLATE/suggest-resource.md) or PRs
 
-## Contributing
+## 🤝 Contributing
 
-Contributions are welcome! Please read the [Contributing Guide](CONTRIBUTING.md).
+Contributions are welcome! Please read the [Contributing Guide](.github/CONTRIBUTING.md).
 
-## License
+## 📝 License
 
 - Curated list (READMEs, etc.): [![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/) [CC0 1.0](LICENSE)
 - MCP server (`mcp-server/`): [MIT License](mcp-server/LICENSE)
