@@ -46,9 +46,11 @@ This list systematically organizes tools, regulations, attack techniques, defens
 
 ## Tools
 
+Tools for conducting AI Red Teaming. If you're unsure where to start, try **Promptfoo** (config-based, easy setup) or **Garak** (CLI one-liner, instant execution).
+
 ### Open Source Tools
 
-Major open source tools for AI Red Teaming. Star counts as of April 2026.
+Star counts as of April 2026 (GitHub API verified).
 
 | Tool | Stars | Language | License | Features |
 |------|------:|----------|---------|----------|
@@ -96,6 +98,8 @@ Major open source tools for AI Red Teaming. Star counts as of April 2026.
 
 ## Regulations & Frameworks
 
+Red teaming is no longer just a best practice — it's becoming a legal obligation. The EU AI Act (effective August 2026) mandates red teaming documentation for high-risk AI, and OWASP has published vendor evaluation criteria.
+
 ### International Regulations
 
 - [EU AI Act](https://artificialintelligenceact.eu/) - EU AI regulation. Full compliance for high-risk AI systems mandatory from August 2, 2026. Red teaming documentation required for high-risk AI
@@ -122,54 +126,69 @@ Major open source tools for AI Red Teaming. Star counts as of April 2026.
 
 ## Attack Techniques
 
+Major attack categories against LLM applications. Understanding what attacks your system faces is the first step toward defense.
+
 ### Prompt Injection
 
-- **Direct Injection**: Directly overwriting system prompts
-- **Indirect Injection**: Embedding attack prompts in external data sources (web pages, documents) and injecting them into models via RAG systems — 📄 [Greshake et al., 2023](https://arxiv.org/abs/2302.12173)
+[OWASP's #1 vulnerability](https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/) for LLM applications. Detected in 73% of production AI deployments during security audits.
+
+- **Direct Injection**: User input overwrites system prompts, causing the model to ignore its original instructions. Leads directly to data leakage or unauthorized operations
+- **Indirect Injection**: Attack prompts embedded in external data sources (web pages, documents) are injected into models via RAG systems. Activates without user action, making detection difficult — 📄 [Greshake et al., 2023](https://arxiv.org/abs/2302.12173)
 
 ### Jailbreaking
 
-- **DAN (Do Anything Now)**: Making models adopt unrestricted personas
-- **Character Roleplay**: Bypassing safety guardrails by having models play specific characters
-- **Encoding Attacks**: Encoding prompts in Base64, ROT13, etc. to bypass filters
-- **Multi-step Attacks (Crescendo)**: Dialogue-based attacks that gradually relax constraints — 📄 [Microsoft Research](https://arxiv.org/abs/2404.01833)
+Techniques to bypass safety guardrails and make models generate outputs they should refuse.
+
+- **DAN (Do Anything Now)**: Making models adopt unrestricted personas. The most widely known attack pattern
+- **Character Roleplay**: Bypassing safety filters through character settings like "you are a malicious hacker"
+- **Encoding Attacks**: Encoding prompts in Base64, ROT13, etc. to bypass text-based filters
+- **Multi-step Attacks (Crescendo)**: Gradually escalating from innocuous conversation to relax safety guardrails over multiple turns — 📄 [Microsoft Research](https://arxiv.org/abs/2404.01833)
 
 ### Multilingual Attacks
 
-- **Low-Resource Language Attacks**: Using non-English languages (including Japanese) to bypass safety guardrails trained primarily on English. Low-resource languages have approximately 3x higher likelihood of encountering harmful content — 📄 [Deng et al., 2024](https://arxiv.org/abs/2310.06474)
-- **Code-Switching Attacks**: Breaking through multilingual safety guardrails by mixing languages (e.g., alternating between English and Japanese)
-- **Japanese-Specific Attack Vectors**: Exploiting Japan's mixed writing system (kanji, hiragana, katakana, romaji)
+Particularly important for developers operating Japanese-language services. Exploits blind spots in English-centric safety training.
+
+- **Low-Resource Language Attacks**: Non-English prompts bypass safety guardrails trained primarily on English. Low-resource languages have approximately 3x higher likelihood of encountering harmful content — 📄 [Deng et al., 2024](https://arxiv.org/abs/2310.06474)
+- **Code-Switching Attacks**: Switching between languages ("answer in English", "now in Japanese") to break through multilingual safety guardrails
+- **Japanese-Specific Attack Vectors**: Exploiting Japan's mixed writing system (kanji, hiragana, katakana, romaji). The same meaning expressed in different scripts can bypass filters
 
 ### Data Extraction
 
-- **System Prompt Extraction**: Techniques to make models disclose system prompt contents
-- **Training Data Extraction**: Techniques to make models output sensitive data used in training
+Attacks directly leading to confidential information leakage. One of the top risk areas for enterprise LLM deployments.
+
+- **System Prompt Extraction**: Making models disclose system prompt contents. Leaks business logic and prompt engineering know-how
+- **Training Data Extraction**: Making models reproduce personal or confidential data used in training. Directly violates privacy regulations
 
 ---
 
 ## Defense Methods
 
+No silver bullet exists to block 100% of attacks. Effective defense is achieved by **combining multiple layers**.
+
 ### Guardrails
 
-- **Input Filtering**: Detection and blocking of malicious inputs through prompt preprocessing — 📄 [Llama Guard](https://arxiv.org/abs/2312.06674)
-- **Output Filtering**: Detection and removal of harmful content through response postprocessing — 📄 [NeMo Guardrails](https://arxiv.org/abs/2310.10501)
-- **Multi-layer Defense**: Input guard -> Model -> Output guard layered defense architecture
-- **Constitutional AI**: Safety alignment through AI feedback — 📄 [Anthropic, 2022](https://arxiv.org/abs/2212.08073)
+- **Input Filtering**: Preprocess user prompts to detect and block malicious inputs. The most fundamental defense layer — 📄 [Llama Guard](https://arxiv.org/abs/2312.06674)
+- **Output Filtering**: Postprocess model responses to detect and remove harmful content or data leaks — 📄 [NeMo Guardrails](https://arxiv.org/abs/2310.10501)
+- **Multi-layer Defense**: Input guard -> Model -> Output guard architecture. Ensures a single-layer breach doesn't immediately lead to damage
+- **Constitutional AI**: Safety alignment through AI feedback. Improves model safety at the training stage — 📄 [Anthropic, 2022](https://arxiv.org/abs/2212.08073)
 
 ### Evaluation & Benchmarks
 
-- [JailbreakBench](https://github.com/JailbreakBench/jailbreakbench) - Standard benchmark for jailbreak attacks
-- [HarmBench](https://github.com/centerforaisafety/HarmBench) - Standardized benchmark for automated red teaming
+Benchmarks for quantitatively measuring defense effectiveness.
+
+- [JailbreakBench](https://github.com/JailbreakBench/jailbreakbench) - Standard jailbreak benchmark. 100 misuse behaviors across 10 categories
+- [HarmBench](https://github.com/centerforaisafety/HarmBench) - Standardized benchmark enabling fair comparison of attack and defense methods
 
 ---
 
 ## MCP / Agent Security
 
-Security resources for MCP (Model Context Protocol) and agentic AI, which rapidly proliferated in 2026.
+MCP saw 30 CVEs reported in just 60 days, with 38% of scanned servers lacking authentication. As LLMs begin calling external tools, this is the fastest-growing attack surface.
 
 ### Overview
 
 - The spread of agentic AI has caused a paradigm shift from "testing models in isolation" to "testing tool call chains and multi-agent environments"
+- Malicious MCP servers can induce "overthinking loops" in LLM agents, amplifying token consumption up to 142.4x (Denial-of-Wallet attacks)
 - Validating MCP server permission restrictions, timeouts, and cost controls is a new challenge
 
 ### Tools & Resources
@@ -192,7 +211,11 @@ Essential metrics for agent testing:
 
 ## Papers
 
+The theoretical foundation of AI Red Teaming. Automated methods achieve ~1.5x the success rate of manual approaches (69.5% vs 47.6%), and research in this field directly impacts practice.
+
 ### Surveys
+
+Papers for grasping the overall landscape. Start here if you're new to the field.
 
 - [Recent Advancements in LLM Red-Teaming: Techniques, Defenses, and Ethical Considerations](https://arxiv.org/abs/2410.09097) - Comprehensive survey on LLM red teaming techniques, defenses, and ethics (2024)
 - [A Survey of Attacks on Large Vision-Language Models](https://arxiv.org/abs/2407.07403) - Survey of attack methods on multimodal LLMs
@@ -201,6 +224,8 @@ Essential metrics for agent testing:
 - [NIST AI 100-2 E2023: Adversarial Machine Learning](https://csrc.nist.gov/pubs/ai/100/2/e2023/final) - NIST taxonomy and terminology for adversarial ML
 
 ### Attack Research
+
+Foundational papers behind many of today's red teaming tools.
 
 - [Universal and Transferable Adversarial Attacks on Aligned Language Models](https://arxiv.org/abs/2307.15043) - **GCG Attack**. Gradient-based discrete optimization for generating universal, transferable adversarial suffixes (Zou et al., 2023)
 - [Jailbreaking Black Box Large Language Models in Twenty Queries (PAIR)](https://arxiv.org/abs/2310.08419) - **PAIR**. Automated jailbreak prompt generation using an attacker LLM against black-box targets
@@ -230,7 +255,7 @@ Essential metrics for agent testing:
 
 ## Japanese-Language Resources
 
-Resources primarily in Japanese for the AI Safety community in Japan.
+AI Red Teaming information is heavily skewed toward English. Practical resources available in Japanese are limited. This section collects Japanese-language articles, books, and communities.
 
 ### Articles
 
@@ -266,13 +291,19 @@ Resources primarily in Japanese for the AI Safety community in Japan.
 
 ## Learning Resources
 
+Learning paths organized by skill level.
+
 ### Beginner (Non-Engineers)
+
+Resources for understanding the concept and necessity of AI Red Teaming. Focuses on "why it's needed" and "what's at risk" rather than technical details.
 
 - [AI Safety Institute (AISI)](https://aisi.go.jp/) - Japan's core AI safety institution. Published guidelines and reports provide a good overview of AI Safety (Japanese)
 - [OWASP Top 10 for LLM Applications - Japanese Translation](https://qiita.com/akiraokusawa/items/dcadb724e067233db569) - Best entry point for understanding LLM risks in Japanese
 - [Textbook of Generative AI Security](https://www.books.or.jp/book-details/9784911384039) - Accessible risk scenarios and countermeasures (Japanese)
 
 ### Practical (Engineers)
+
+Technical resources for hands-on red teaming. From tool setup to execution.
 
 - [Promptfoo Documentation](https://www.promptfoo.dev/docs/) - Most comprehensive practical introduction to AI red teaming. Covers MCP and agent testing
 - [PyRIT Documentation](https://microsoft.github.io/PyRIT/) - Programmatic red teaming in Python with multimodal support
@@ -281,6 +312,8 @@ Resources primarily in Japanese for the AI Safety community in Japan.
 - [LLM CTF @ SaTML 2024](https://qiita.com/nodananodanado/items/3c9b75a848c56fe12b73) - Learn prompt injection hands-on through CTF format (Japanese)
 
 ### Research
+
+Foundational resources for entering AI Safety research. Paper lists, benchmarks, and datasets.
 
 - [Awesome-LLM-Safety (GitHub)](https://github.com/ydyjya/Awesome-LLM-Safety) - English paper list for LLM Safety research (1,800+ Stars, April 2026). Organized in 6 major categories
 - [awesome-llm-security (GitHub)](https://github.com/corca-ai/awesome-llm-security) - LLM security paper list (1,500+ Stars, April 2026). Attacks, defenses, and benchmarks
