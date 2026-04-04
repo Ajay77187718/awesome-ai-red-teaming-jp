@@ -1,23 +1,21 @@
-name: Awesome Lint
+name: Markdown Lint
 
 on:
   push:
     branches: [main]
-    paths: ['README.md']
+    paths: ['**.md']
   pull_request:
     branches: [main]
-    paths: ['README.md']
+    paths: ['**.md']
 
 jobs:
-  awesome-lint:
+  markdown-lint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - name: Lint Markdown files
+        uses: DavidAnson/markdownlint-cli2-action@v19
         with:
-          node-version: '20'
-
-      - name: Run awesome-lint
-        run: npx awesome-lint
+          globs: '*.md'
+          config: '.markdownlint.json'

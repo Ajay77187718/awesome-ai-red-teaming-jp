@@ -274,7 +274,7 @@ Resources primarily in Japanese for the AI Safety community in Japan.
 ## Update Policy
 
 - Star counts and release info are updated quarterly
-- Broken links are checked monthly via [GitHub Actions](.github/workflows/link-check.yml)
+- Broken links are checked automatically via GitHub Actions ([link-check](.github/workflows/link-check.yml), [markdown-lint](.github/workflows/awesome-lint.yml))
 - New resource suggestions are welcome via [Issues](.github/ISSUE_TEMPLATE/suggest-resource.md) or PRs
 
 ## Contributing
