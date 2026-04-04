@@ -4,7 +4,18 @@
 
 > A curated list of AI Red Teaming / AI Safety resources with a focus on Japanese-language materials
 
-This list covers tools, regulations, attack techniques, defense methods, papers, and learning resources related to AI system safety evaluation (red teaming). While primarily focused on Japanese-language resources, English resources are included where equivalent Japanese materials do not exist.
+Applications built with LLMs are exposed to attacks such as prompt injection and jailbreaking. **AI Red Teaming** is the practice of evaluating system safety from an attacker's perspective. With the EU AI Act mandating red teaming documentation for high-risk AI systems from August 2026, the practical importance of this field is growing rapidly.
+
+This list systematically organizes tools, regulations, attack techniques, defense methods, papers, and learning resources related to AI Red Teaming, with a focus on Japanese-language materials.
+
+**Where to start:**
+
+| Your Role | Recommended Starting Point |
+|-----------|--------------------------|
+| Developing or operating LLM apps | [Attack Techniques](#attack-techniques) → [Tools](#tools) → [Defense Methods](#defense-methods) |
+| Responsible for compliance / risk | [Regulations & Frameworks](#regulations--frameworks) → [Tools](#tools) |
+| Learning about AI Safety | [Learning Resources](#learning-resources) → [Attack Techniques](#attack-techniques) |
+| Already practicing AI Red Teaming | [Contents](#contents) and jump to any section |
 
 ## Contents
 
