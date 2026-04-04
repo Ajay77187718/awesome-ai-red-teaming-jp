@@ -78,7 +78,7 @@ Star counts as of April 2026 (GitHub API verified).
 
 ### Tools & Datasets from Japan
 
-- [Japan-AISI/aisev](https://github.com/Japan-AISI/aisev) - AI safety evaluation environment developed by Japan's AI Safety Institute (AISI). Features quantitative/qualitative evaluation across 10 assessment dimensions and automated red teaming. Requires Docker. Supports both Japanese and English (released September 2025, last updated February 2026)
+- [Japan-AISI/aisev](https://github.com/Japan-AISI/aisev) - AI safety evaluation environment developed by Japan's AI Safety Institute (AISI). Features quantitative/qualitative evaluation across 10 assessment dimensions and automated red teaming. Requires Docker. Supports both Japanese and English (released September 2025, last updated December 2025)
 - [llm-jp/AnswerCarefully](https://huggingface.co/datasets/llm-jp/AnswerCarefully) - Japanese LLM safety dataset by NII's LLM-jp project. 1,800 Q&A pairs reflecting Japan's socio-cultural context. Useful for safety fine-tuning and as an evaluation benchmark — 📄 [Paper](https://arxiv.org/abs/2506.02372)
 - [llm-jp/awesome-japanese-llm](https://github.com/llm-jp/awesome-japanese-llm) - Comprehensive overview of Japanese LLMs. Useful for understanding the landscape of models before conducting safety evaluation
 
@@ -108,7 +108,7 @@ Red teaming is no longer just a best practice — it's becoming a legal obligati
 - [OWASP Top 10 for LLM Applications](https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/) - Top 10 security risks for LLM applications (2025 edition)
 - [OWASP Top 10 for Agentic Applications 2026](https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/) - Top 10 risks for agentic AI applications (2026 edition)
 - [OWASP AI Red Teaming Vendor Evaluation Criteria v1.0](https://genai.owasp.org/resource/owasp-vendor-evaluation-criteria-for-ai-red-teaming-providers-tooling-v1-0/) - Evaluation criteria for AI red teaming providers and tools
-- [CSA Agentic AI Red Teaming Guide](https://cloudsecurityalliance.org/) - Agentic AI red teaming guide by the Cloud Security Alliance (May 2025)
+- [CSA Agentic AI Red Teaming Guide](https://cloudsecurityalliance.org/artifacts/agentic-ai-red-teaming-guide) - Agentic AI red teaming guide by the Cloud Security Alliance (May 2025)
 
 ### Japan-Specific Regulations
 
@@ -130,7 +130,7 @@ Major attack categories against LLM applications. Understanding what attacks you
 
 ### Prompt Injection
 
-[OWASP's #1 vulnerability](https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/) for LLM applications. Detected in 73% of production AI deployments during security audits.
+[OWASP's #1 vulnerability](https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/) for LLM applications. [Detected in 73% of production AI deployments](https://sqmagazine.co.uk/prompt-injection-statistics/) during security audits.
 
 - **Direct Injection**: User input overwrites system prompts, causing the model to ignore its original instructions. Leads directly to data leakage or unauthorized operations
 - **Indirect Injection**: Attack prompts embedded in external data sources (web pages, documents) are injected into models via RAG systems. Activates without user action, making detection difficult — 📄 [Greshake et al., 2023](https://arxiv.org/abs/2302.12173)
@@ -183,12 +183,12 @@ Benchmarks for quantitatively measuring defense effectiveness.
 
 ## MCP / Agent Security
 
-MCP saw 30 CVEs reported in just 60 days, with 38% of scanned servers lacking authentication. As LLMs begin calling external tools, this is the fastest-growing attack surface.
+MCP saw [30 CVEs reported in just 60 days, with 38% of scanned servers lacking authentication](https://medium.com/ai-security-hub/mcps-first-year-what-30-cves-and-500-server-scans-tell-us-about-ai-s-fastest-growing-attack-6d183fc9497f). As LLMs begin calling external tools, this is the fastest-growing attack surface.
 
 ### Overview
 
 - The spread of agentic AI has caused a paradigm shift from "testing models in isolation" to "testing tool call chains and multi-agent environments"
-- Malicious MCP servers can induce "overthinking loops" in LLM agents, amplifying token consumption up to 142.4x (Denial-of-Wallet attacks)
+- Malicious MCP servers can induce "overthinking loops" in LLM agents, [amplifying token consumption up to 142.4x](https://arxiv.org/abs/2602.14798) (Denial-of-Wallet attacks)
 - Validating MCP server permission restrictions, timeouts, and cost controls is a new challenge
 
 ### Tools & Resources
