@@ -30,14 +30,14 @@ This list covers tools, regulations, attack techniques, defense methods, papers,
 
 ### Open Source Tools
 
-Major open source tools for AI Red Teaming. Star counts as of March 2026.
+Major open source tools for AI Red Teaming. Star counts as of April 2026.
 
 | Tool | Stars | Language | License | Features |
 |------|------:|----------|---------|----------|
-| [Promptfoo](https://github.com/promptfoo/promptfoo) | ~8,800 | TypeScript | MIT | RAG, agent & MCP testing, compliance mapping |
-| [Garak](https://github.com/NVIDIA/garak) | ~7,000 | Python | Apache 2.0 | By NVIDIA, 120+ probe modules, academic approach |
-| [PyRIT](https://github.com/Azure/PyRIT) | ~3,400 | Python | MIT | By Microsoft, multimodal support, 75 converters |
-| [DeepTeam](https://github.com/confident-ai/deepteam) | ~1,300 | Python | Apache 2.0 | Dynamic test case generation, OWASP/NIST mapping |
+| [Promptfoo](https://github.com/promptfoo/promptfoo) | ~19,300 | TypeScript | MIT | RAG, agent & MCP testing, compliance mapping |
+| [Garak](https://github.com/NVIDIA/garak) | ~7,500 | Python | Apache 2.0 | By NVIDIA, probe modules, academic approach |
+| [PyRIT](https://github.com/microsoft/PyRIT) | ~3,700 | Python | MIT | By Microsoft, multimodal support, 75 converters |
+| [DeepTeam](https://github.com/confident-ai/deepteam) | ~1,400 | Python | Apache 2.0 | Dynamic test case generation, OWASP/NIST mapping |
 
 #### Promptfoo
 
@@ -50,7 +50,7 @@ Major open source tools for AI Red Teaming. Star counts as of March 2026.
 
 #### PyRIT
 
-- [Azure/PyRIT](https://github.com/Azure/PyRIT) - Microsoft's Python Risk Identification Tool. Supports multimodal testing (text, image, audio, video) through programmatic orchestration. Highly flexible as a toolkit, but requires Python coding
+- [microsoft/PyRIT](https://github.com/microsoft/PyRIT) - Microsoft's Python Risk Identification Tool. Supports multimodal testing (text, image, audio, video) through programmatic orchestration. Highly flexible as a toolkit, but requires Python coding
 
 #### DeepTeam
 
@@ -257,15 +257,15 @@ Resources primarily in Japanese for the AI Safety community in Japan.
 ### Practical (Engineers)
 
 - [Promptfoo Documentation](https://www.promptfoo.dev/docs/) - Most comprehensive practical introduction to AI red teaming. Covers MCP and agent testing
-- [PyRIT Documentation](https://azure.github.io/PyRIT/) - Programmatic red teaming in Python with multimodal support
+- [PyRIT Documentation](https://microsoft.github.io/PyRIT/) - Programmatic red teaming in Python with multimodal support
 - [Garak Documentation](https://docs.garak.ai/) - LLM vulnerability scanning basics and probe module usage
 - [GMO Flatt Security Blog - LLM Security Series](https://blog.flatt.tech/) - Practical Japanese guides on prompt injection, guardrails, and framework vulnerabilities
 - [LLM CTF @ SaTML 2024](https://qiita.com/nodananodanado/items/3c9b75a848c56fe12b73) - Learn prompt injection hands-on through CTF format (Japanese)
 
 ### Research
 
-- [Awesome-LLM-Safety (GitHub)](https://github.com/ydyjya/Awesome-LLM-Safety) - English paper list for LLM Safety research (1,800+ Stars). Organized in 6 major categories
-- [awesome-llm-security (GitHub)](https://github.com/corca-ai/awesome-llm-security) - LLM security paper list (1,600+ Stars). Attacks, defenses, and benchmarks
+- [Awesome-LLM-Safety (GitHub)](https://github.com/ydyjya/Awesome-LLM-Safety) - English paper list for LLM Safety research (1,800+ Stars, April 2026). Organized in 6 major categories
+- [awesome-llm-security (GitHub)](https://github.com/corca-ai/awesome-llm-security) - LLM security paper list (1,500+ Stars, April 2026). Attacks, defenses, and benchmarks
 - [JailbreakBench](https://github.com/JailbreakBench/jailbreakbench) - Standard benchmark for jailbreak research. Essential for comparing results
 - [HarmBench](https://github.com/centerforaisafety/HarmBench) - Standardized benchmark for automated red teaming
 
