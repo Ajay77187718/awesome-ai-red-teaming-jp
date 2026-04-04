@@ -183,7 +183,7 @@ Essential metrics for agent testing:
 
 - [Universal and Transferable Adversarial Attacks on Aligned Language Models](https://arxiv.org/abs/2307.15043) - **GCG Attack**. Gradient-based discrete optimization for generating universal, transferable adversarial suffixes (Zou et al., 2023)
 - [Jailbreaking Black Box Large Language Models in Twenty Queries (PAIR)](https://arxiv.org/abs/2310.08419) - **PAIR**. Automated jailbreak prompt generation using an attacker LLM against black-box targets
-- [Tree of Attacks: Jailbreaking Black-Box LLMs with Auto-Generated Subversions (TAP)](https://arxiv.org/abs/2312.02119) - **TAP**. Tree search-based automated jailbreaking, an extension of PAIR (ICLR 2025)
+- [Tree of Attacks: Jailbreaking Black-Box LLMs Automatically (TAP)](https://arxiv.org/abs/2312.02119) - **TAP**. Tree search-based automated jailbreaking, an extension of PAIR (ICLR 2025)
 - [Multilingual Jailbreak Challenges in Large Language Models](https://arxiv.org/abs/2310.06474) - Multilingual jailbreaks. Low-resource languages have ~3x higher harmful content rate (ICLR 2024)
 - [Low-Resource Languages Jailbreak GPT-4](https://arxiv.org/abs/2310.02446) - Demonstrates safety training generalization failure in low-resource languages
 - [A Cross-Language Investigation into Jailbreak Attacks in Large Language Models](https://arxiv.org/abs/2401.16765) - Multilingual jailbreak dataset construction and defense reducing attack success by 96.2%
@@ -203,7 +203,7 @@ Essential metrics for agent testing:
 
 - [JSAI National Conference Proceedings (J-Stage)](https://www.jstage.jst.go.jp/browse/pjsai/-char/ja) - Paper archive from JSAI national conferences. Searchable for AI Safety-related presentations
 - AI Safety Red Teaming Method Guide v1.10 — Listed in [Japan-Specific Regulations](#japan-specific-regulations)
-- [JBB-S: Japanese Benchmark for LLM Safety](https://arxiv.org/abs/2403.19964) - Safety evaluation benchmark for Japanese LLMs covering Japan-specific harmful output categories
+- [AnswerCarefully: A Dataset for Improving the Safety of Japanese LLM Output](https://arxiv.org/abs/2506.02372) - Japanese LLM safety dataset by NII with 1,800 Q&A pairs reflecting Japan's socio-cultural context. [HuggingFace](https://huggingface.co/datasets/llm-jp/AnswerCarefully)
 
 ---
 
