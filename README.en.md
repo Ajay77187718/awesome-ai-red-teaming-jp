@@ -330,6 +330,32 @@ This repository supports [llms.txt](llms.txt) for efficient access by AI agents 
 - [`llms.txt`](llms.txt) — Structured summary with section-level links
 - [`llms-full.txt`](llms-full.txt) — All content in a single file
 
+### MCP Server
+
+A local MCP server is included for querying resources directly from MCP clients like Claude Code.
+
+**Setup:**
+
+```bash
+# Clone the repository
+git clone https://github.com/HayatoFujihara/awesome-ai-red-teaming-jp.git
+cd awesome-ai-red-teaming-jp
+
+# Register with Claude Code
+claude mcp add ai-red-teaming-jp \
+  -s user \
+  -- uv --directory ./mcp-server run server.py
+```
+
+**Available tools:**
+
+| Tool | Description |
+|------|-------------|
+| `search(query, lang?)` | Full-text keyword search across all resources |
+| `get_tools(license?, language?)` | Filter the open source tools list |
+| `get_regulations(region?)` | Get regulations by region |
+| `get_section(name)` | Get full section content by name |
+
 ## Update Policy
 
 - Star counts and release info are updated quarterly
