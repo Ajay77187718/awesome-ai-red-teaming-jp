@@ -28,15 +28,18 @@ def test_split_sections_basic():
 def test_get_sections_ja():
     sections = _get_sections("ja")
     assert len(sections) > 0
-    assert "ツール" in sections
-    assert "攻撃手法" in sections
+    # Section names include emojis, use partial match
+    section_names = " ".join(sections.keys())
+    assert "ツール" in section_names
+    assert "攻撃手法" in section_names
 
 
 def test_get_sections_en():
     sections = _get_sections("en")
     assert len(sections) > 0
-    assert "Tools" in sections
-    assert "Attack Techniques" in sections
+    section_names = " ".join(sections.keys())
+    assert "Tools" in section_names
+    assert "Attack Techniques" in section_names
 
 
 def test_get_tools_data_ja():
