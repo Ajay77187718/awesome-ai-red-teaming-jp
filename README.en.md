@@ -37,7 +37,7 @@ Major open source tools for AI Red Teaming. Star counts as of March 2026.
 | [Promptfoo](https://github.com/promptfoo/promptfoo) | ~8,800 | TypeScript | MIT | RAG, agent & MCP testing, compliance mapping |
 | [Garak](https://github.com/NVIDIA/garak) | ~7,000 | Python | Apache 2.0 | By NVIDIA, 120+ probe modules, academic approach |
 | [PyRIT](https://github.com/Azure/PyRIT) | ~3,400 | Python | MIT | By Microsoft, multimodal support, 75 converters |
-| [DeepTeam](https://github.com/confident-ai/deepteam) | ~1,300 | Python | OSS | Dynamic test case generation, OWASP/NIST mapping |
+| [DeepTeam](https://github.com/confident-ai/deepteam) | ~1,300 | Python | Apache 2.0 | Dynamic test case generation, OWASP/NIST mapping |
 
 #### Promptfoo
 
@@ -64,14 +64,13 @@ Major open source tools for AI Red Teaming. Star counts as of March 2026.
 
 - [ARTKIT](https://github.com/BCG-X-Official/artkit) - Automated multi-turn attack simulation
 - [Giskard](https://github.com/Giskard-AI/giskard) - Dynamic multi-turn testing for agents, RAG, and chatbots
-- [Mindgard](https://github.com/Mindgard/cli) - Model-agnostic AI security testing. MITRE ATLAS/OWASP compliant, automated reconnaissance
+- [Mindgard](https://mindgard.ai/) - Model-agnostic AI security testing. MITRE ATLAS/OWASP compliant, automated reconnaissance. [CLI (PyPI)](https://pypi.org/project/mindgard/)
 - [AISafetyLab](https://github.com/thu-coai/AISafetyLab) - Comprehensive attack, defense, and evaluation framework by Tsinghua University
 
 ### Commercial Tools & Services
 
-- [Cisco AI Defense](https://www.cisco.com/site/us/en/products/security/ai-defense/index.html) - Commercial AI security solution including MCP server discovery, inventory, and risk management
+- [Cisco AI Defense](https://www.cisco.com/site/us/en/products/security/ai-defense/index.html) - Commercial AI security solution including MCP server discovery, inventory, and risk management (incorporates former Robust Intelligence)
 - [HiddenLayer](https://hiddenlayer.com/) - Continuous monitoring of AI model security and compliance
-- [Robust Intelligence (Cisco)](https://www.cisco.com/site/us/en/products/security/ai-defense/index.html) - AI model validation and firewall. Now integrated into Cisco AI Defense
 
 ---
 
@@ -89,7 +88,7 @@ Major open source tools for AI Red Teaming. Star counts as of March 2026.
 
 ### Japan-Specific Regulations
 
-- [AI Safety Red Teaming Method Guide v1.10](https://aisi.go.jp/assets/pdf/E1_ai_safety_RT_v1.10_en.pdf) - Red teaming methodology guide by Japan's AI Safety Institute (AISI) (March 2025)
+- [AI Safety Red Teaming Method Guide v1.10](https://aisi.go.jp/assets/pdf/E1_ai_safety_RT_v1.10_en.pdf) - Red teaming methodology guide by Japan's AI Safety Institute (AISI) (March 2025). [Japanese version](https://aisi.go.jp/assets/pdf/J1_ai_safety_RT_v1.10_ja.pdf) / [Summary](https://aisi.go.jp/assets/pdf/J2_ai_safety_RT_summary_v1.10_ja.pdf)
 - [AI Business Operator Guidelines](https://www.meti.go.jp/shingikai/mono_info_service/ai_shakai_jisso/pdf/20240419_1.pdf) - AI operator guidelines by Japan's Ministry of Internal Affairs and Ministry of Economy (Japanese)
 - [AI Safety Institute (AISI)](https://aisi.go.jp/) - Japan's core AI safety research institution. Develops evaluation tools and guidelines
 
@@ -203,7 +202,7 @@ Essential metrics for agent testing:
 ### Japanese Papers & Presentations
 
 - [JSAI National Conference Proceedings (J-Stage)](https://www.jstage.jst.go.jp/browse/pjsai/-char/ja) - Paper archive from JSAI national conferences. Searchable for AI Safety-related presentations
-- [AI Safety Red Teaming Method Guide v1.10](https://aisi.go.jp/assets/pdf/E1_ai_safety_RT_v1.10_en.pdf) - Systematic red teaming methodology guide by AISI (March 2025)
+- AI Safety Red Teaming Method Guide v1.10 — Listed in [Japan-Specific Regulations](#japan-specific-regulations)
 - [JBB-S: Japanese Benchmark for LLM Safety](https://arxiv.org/abs/2403.19964) - Safety evaluation benchmark for Japanese LLMs covering Japan-specific harmful output categories
 
 ---
