@@ -41,6 +41,7 @@ This list systematically organizes tools, regulations, attack techniques, defens
 - [Papers](#papers)
 - [Japanese-Language Resources](#japanese-language-resources)
 - [Learning Resources](#learning-resources)
+- [For AI Agents](#for-ai-agents)
 
 ---
 
@@ -321,6 +322,13 @@ Foundational resources for entering AI Safety research. Paper lists, benchmarks,
 - [HarmBench](https://github.com/centerforaisafety/HarmBench) - Standardized benchmark for automated red teaming
 
 ---
+
+## For AI Agents
+
+This repository supports [llms.txt](llms.txt) for efficient access by AI agents and RAG pipelines.
+
+- [`llms.txt`](llms.txt) — Structured summary with section-level links
+- [`llms-full.txt`](llms-full.txt) — All content in a single file
 
 ## Update Policy
 

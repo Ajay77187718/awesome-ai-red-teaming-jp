@@ -1,0 +1,68 @@
+# Awesome AI Red Teaming JP
+
+> A curated list of AI Red Teaming / AI Safety resources in Japanese. Covers tools, regulations, attack techniques, defense methods, MCP/agent security, academic papers, and learning resources. Bilingual (Japanese/English).
+
+AI Red Teaming is the practice of testing AI systems from an adversary's perspective to identify vulnerabilities before attackers exploit them. This list is the only comprehensive Japanese-language resource for the field, maintained with verified facts and source citations.
+
+Key context:
+- EU AI Act mandates red teaming documentation for high-risk AI (effective August 2026)
+- Japan AISI published its Red Teaming Guide v1.10 (March 2025)
+- Prompt injection detected in 73% of production AI deployments
+- MCP saw 30 CVEs in 60 days; 38% of scanned servers lack authentication
+
+## Tools
+
+- [Promptfoo](https://github.com/promptfoo/promptfoo): LLM security testing framework. RAG, agent, and MCP testing support. ~19,300 stars, TypeScript, MIT
+- [Garak](https://github.com/NVIDIA/garak): NVIDIA's LLM vulnerability scanner. 30+ probe categories. ~7,500 stars, Python, Apache 2.0
+- [PyRIT](https://github.com/microsoft/PyRIT): Microsoft's Python Risk Identification Tool. Multimodal (text/image/audio/video). ~3,700 stars, Python, MIT
+- [DeepTeam](https://github.com/confident-ai/deepteam): Dynamic test case generation without datasets. OWASP/NIST aligned. ~1,400 stars, Python, Apache 2.0
+- [Japan-AISI/aisev](https://github.com/Japan-AISI/aisev): Japan AI Safety Institute evaluation environment. 10 assessment dimensions, automated red teaming. Docker required
+- [llm-jp/AnswerCarefully](https://huggingface.co/datasets/llm-jp/AnswerCarefully): Japanese LLM safety dataset. 1,800 Q&A pairs reflecting Japanese socio-cultural context
+
+## Regulations & Frameworks
+
+- [EU AI Act](https://artificialintelligenceact.eu/): Red teaming documentation mandatory for high-risk AI from August 2026
+- [NIST AI RMF](https://www.nist.gov/itl/ai-risk-management-framework): AI risk management framework
+- [MITRE ATLAS](https://atlas.mitre.org/): Adversarial threat knowledge base for AI systems
+- [OWASP Top 10 for LLM Applications 2025](https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/)
+- [OWASP Top 10 for Agentic Applications 2026](https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/)
+- [CSA Agentic AI Red Teaming Guide](https://cloudsecurityalliance.org/artifacts/agentic-ai-red-teaming-guide)
+- [Japan AISI Red Teaming Guide v1.10](https://aisi.go.jp/assets/pdf/J1_ai_safety_RT_v1.10_ja.pdf): Japan's AI Safety Institute red teaming methodology guide (March 2025)
+
+## Attack Techniques
+
+- [Prompt Injection](https://raw.githubusercontent.com/HayatoFujihara/awesome-ai-red-teaming-jp/main/README.en.md): Direct and indirect injection. OWASP #1 vulnerability for LLM apps
+- [Jailbreaking](https://raw.githubusercontent.com/HayatoFujihara/awesome-ai-red-teaming-jp/main/README.en.md): DAN, character roleplay, encoding attacks, multi-turn Crescendo
+- [Multilingual Attacks](https://raw.githubusercontent.com/HayatoFujihara/awesome-ai-red-teaming-jp/main/README.en.md): Low-resource language bypass, code-switching, Japanese-specific vectors
+- [Data Extraction](https://raw.githubusercontent.com/HayatoFujihara/awesome-ai-red-teaming-jp/main/README.en.md): System prompt extraction, training data extraction
+
+## Defense Methods
+
+- [Llama Guard](https://arxiv.org/abs/2312.06674): Meta's input-output safeguard model
+- [NeMo Guardrails](https://arxiv.org/abs/2310.10501): NVIDIA's programmable guardrails toolkit
+- [Constitutional AI](https://arxiv.org/abs/2212.08073): Anthropic's AI feedback-based safety alignment
+- [JailbreakBench](https://github.com/JailbreakBench/jailbreakbench): Standard jailbreak benchmark
+- [HarmBench](https://github.com/centerforaisafety/HarmBench): Automated red teaming benchmark
+
+## MCP / Agent Security
+
+- [Promptfoo MCP Security Testing](https://www.promptfoo.dev/docs/red-team/mcp-security-testing/): MCP server security testing guide
+- [promptfoo/evil-mcp-server](https://github.com/promptfoo/evil-mcp-server): Tool poisoning attack simulation
+- [Adversa AI - MCP Security Resources](https://adversa.ai/blog/top-mcp-security-resources-march-2026/)
+
+## Papers
+
+- [The Automation Advantage in AI Red Teaming](https://arxiv.org/abs/2504.19855): 214,271 attack trials analyzed. Automated methods (69.5%) outperform manual (47.6%)
+- [GCG Attack](https://arxiv.org/abs/2307.15043): Universal adversarial suffixes via gradient-based optimization (Zou et al., 2023)
+- [PAIR](https://arxiv.org/abs/2310.08419): Black-box jailbreaking in 20 queries
+- [TAP](https://arxiv.org/abs/2312.02119): Tree-of-attacks jailbreaking (ICLR 2025)
+- [Multilingual Jailbreak](https://arxiv.org/abs/2310.06474): ~3x higher harmful content in low-resource languages (ICLR 2024)
+- [Indirect Prompt Injection](https://arxiv.org/abs/2302.12173): Systematic analysis (Greshake et al., 2023)
+- [Crescendo Attack](https://arxiv.org/abs/2404.01833): Multi-turn escalation jailbreak (Microsoft Research)
+- [AnswerCarefully](https://arxiv.org/abs/2506.02372): Japanese LLM safety dataset (NII)
+
+## Optional
+
+- [Full Japanese README](https://raw.githubusercontent.com/HayatoFujihara/awesome-ai-red-teaming-jp/main/README.md): Complete resource list in Japanese
+- [Full English README](https://raw.githubusercontent.com/HayatoFujihara/awesome-ai-red-teaming-jp/main/README.en.md): Complete resource list in English
+- [Full content (llms-full.txt)](https://raw.githubusercontent.com/HayatoFujihara/awesome-ai-red-teaming-jp/main/llms-full.txt): All content in a single file for RAG/agent ingestion
