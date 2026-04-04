@@ -368,6 +368,5 @@ claude mcp add ai-red-teaming-jp \
 
 ## ライセンス
 
-[![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
-
-この作品は [CC0 1.0](LICENSE) の下で公開されています。
+- キュレーションリスト（README等）: [![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/) [CC0 1.0](LICENSE)
+- MCPサーバー（`mcp-server/`）: [MIT License](mcp-server/LICENSE)

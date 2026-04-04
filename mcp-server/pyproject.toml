@@ -2,6 +2,7 @@
 name = "awesome-ai-red-teaming-jp-mcp"
 version = "0.1.0"
 description = "MCP server for querying AI Red Teaming / AI Safety resources"
+license = "MIT"
 requires-python = ">=3.10"
 dependencies = [
     "mcp[cli]>=1.6.0",

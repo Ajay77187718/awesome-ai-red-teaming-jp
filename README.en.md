@@ -368,6 +368,5 @@ Contributions are welcome! Please read the [Contributing Guide](CONTRIBUTING.md)
 
 ## License
 
-[![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
-
-This work is released under [CC0 1.0](LICENSE).
+- Curated list (READMEs, etc.): [![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/) [CC0 1.0](LICENSE)
+- MCP server (`mcp-server/`): [MIT License](mcp-server/LICENSE)
